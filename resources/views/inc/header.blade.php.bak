@@ -1,0 +1,72 @@
+<!-- <img src="images/header_image.png" alt=""> -->
+
+            {{--  <div class="menu_container">
+
+            
+            </div>  --}}
+
+
+            <!-- <div class="topnav">
+                <a href="">test 1</a>
+                <a href="">test 2</a>
+                <a href="">test 3</a>
+                <a href="">test 1</a>
+                <a href="">test 2</a>
+                <a href="">test 3</a>
+                <div>
+                    <form action="">
+                        <input type="text">
+                        <button>zoek</button>
+                    </form>
+                </div>
+                <a href="">test 1</a>
+                <a href="">test 2</a>
+                <a href="">test 3</a>
+            </div> -->
+           <!-- <img src="images/header_image.png" alt="" height="50"> -->
+           <!-- <img src="images/header_image.png" alt=""> -->
+              <ul>
+                <li>
+                   {!! $MenuTopPC->asUl() !!}  
+                     {!! $MenuTopPC->asDiv() !!}
+                  </li>
+                <li style="background-color: orange;">
+                    {!! Form::open()  !!}
+                        {!! Form::text('search', 'zoek product') !!}
+                        {!! Form::submit('Zoek') !!}
+                    {!! Form::close()  !!}
+                </li>
+                
+                @guest
+                    <li class="loginLogout"><a href="{{ route('login') }}">Inloggen</a></li>
+                @else
+                    <li class="loginLogout">
+                        <a href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();">
+                            Uitloggen
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
+                    </li>
+                @endguest
+            </ul>  
+
+            {{--  [test div voor navigatie met zoekbalk]  --}}
+                {{--  [https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_searchbar3]  --}}
+            <!-- <div class="topnav">
+                <a href="">test 1</a>
+                <a href="">test 2</a>
+                <a href="">test 3</a>-->
+                <!-- <div class="search-container"> --><!--
+                <div class="">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit">zoek</button>
+                </form>
+              </div>
+            </div> -->
+            {{--  [/test div voor navigatie met zoekbalk]  --}}
+     

@@ -1,0 +1,158 @@
+/* css code voor landingspagina winkel */
+
+/* [css voor body moet nog uit deze file worden gehaald] */
+/* body {
+    background-color: darkgoldenrod;
+} */
+/* [/css voor body moet nog uit deze file worden gehaald] */
+
+.shopname {
+    width: 100%;
+    height: 80px;
+    background-color: lightgreen;
+    border: 1px solid black;
+}
+
+.shopname > h1 {
+    text-align: center;
+    color: red;
+}
+
+.shopinfo {
+    width: 100%;
+    height: auto;
+    background-color: darkgreen;
+    /*border: 1px solid white;*/
+    display: grid;
+    grid-template-columns: 100px auto;
+    /* grid-template-areas: "shopimage shopdescription"; */
+}
+
+    .shopimage {
+        width: 100%;
+        height: 100%;
+        background-color: darkblue;
+        /* grid-area: shopimage; */
+        /* border: 1px solid lightblue; */
+    }
+
+        .shopimage  img {
+            width: 100%;
+        }
+
+    .shopdescription {
+        width: 100%;
+        /*height: 100%;*/
+        background-color: lightblue;
+        /* grid-area: shopdescription; */
+        /* border: 1px solid darkblue; */
+    }
+
+.shoplocation {
+    width: 100%;
+    height: 80px;
+    background-color: lightgreen;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto 100px;
+}
+
+    .shopcontact {
+        width: 100%;
+        height: 100%;
+        background-color: lightblue;
+        border: 1px solid darkblue;
+    }
+
+    .shop_google_maps {
+        width: 100%;
+        height: 100%;
+        background-color: darkblue;
+        border: 1px solid lightblue;
+    }
+
+.shopproducts {
+    width: 100%;
+    height: auto;
+    background-color: darkgreen;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-areas: 
+            "shopcategories shopproduct"; */
+}
+
+    .shopproduct {
+        width: 100%;
+        height: 100%;
+        background-color: darkblue;
+        border: 1px solid lightblue;
+        /*grid-area: "shopproduct";*/
+    }
+
+    .shopcategories {
+        width: 100%;
+        height: 100%;
+        background-color: lightblue;
+        border: 1px solid darkblue;
+        /*grid-area: "shopcategories";*/
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+        .shopcategory1 {
+            width: 100%;
+            height: 100%;
+            background-color: red;
+        }
+
+        .shopcategory2 {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+        }
+
+        .shopcategory3 {
+            width: 100%;
+            height: 100%;
+            background-color: blue;
+        }
+
+/* .socialmedia {
+    width: 100%;
+    height: auto;
+    background-color: lightgreen;
+    border: 1px solid white;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+    .social_website {
+        width: 100%;
+        height: 100%;
+        background-color: orange;
+    }
+
+    .social_facebook {
+        width: 100%;
+        height: 100%;
+        background-color: red;
+    }
+
+    .social_twitter {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+
+    .social_linkedin {
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+    }
+
+    .social_other {
+        width: 100%;
+        height: 100%;
+        background-color: orange;
+    } */
